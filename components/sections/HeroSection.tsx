@@ -97,7 +97,7 @@ export default function HeroSection() {
 
       {/* Layer 3: centered narrow content */}
       <div
-        className="relative w-full max-w-2xl mx-auto px-6 text-center pt-24 pb-16"
+        className="relative w-full max-w-4xl mx-auto px-6 text-center pt-24 pb-16"
         style={{ zIndex: 3 }}
       >
         {/* Eyebrow */}
@@ -127,13 +127,13 @@ export default function HeroSection() {
           style={{ animationDelay: "0.15s" }}
         >
           <span
-            className="block text-4xl sm:text-5xl lg:text-6xl"
+            className="block text-4xl sm:text-5xl lg:text-7xl whitespace-nowrap"
             style={{ color: "#f5f0f0" }}
           >
             FIRE SPREADS IN SECONDS.
           </span>
           <span
-            className="block text-3xl sm:text-4xl mt-2 text-ice-gradient"
+            className="block text-2xl sm:text-3xl lg:text-5xl mt-2 text-ice-gradient"
           >
             DNF SLOWS IT.
           </span>
@@ -141,7 +141,7 @@ export default function HeroSection() {
 
         {/* Sub */}
         <p
-          className="text-base max-w-sm mx-auto mb-8 leading-relaxed animate-fade-in-up"
+          className="text-base max-w-md mx-auto mb-8 leading-relaxed animate-fade-in-up"
           style={{ color: "#8a7070", animationDelay: "0.3s" }}
         >
           Germany-engineered proactive fire spread retardant — eco-certified,
