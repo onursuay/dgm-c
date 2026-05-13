@@ -97,7 +97,7 @@ export default function HeroSection() {
 
       {/* Layer 3: centered narrow content */}
       <div
-        className="relative w-full max-w-4xl mx-auto px-6 text-center pt-24 pb-16"
+        className="relative w-full max-w-5xl mx-auto px-6 flex flex-col items-center text-center pt-24 pb-16"
         style={{ zIndex: 3 }}
       >
         {/* Eyebrow */}
@@ -127,13 +127,14 @@ export default function HeroSection() {
           style={{ animationDelay: "0.15s" }}
         >
           <span
-            className="block text-4xl sm:text-5xl lg:text-7xl whitespace-nowrap"
-            style={{ color: "#f5f0f0" }}
+            className="block"
+            style={{ color: "#f5f0f0", fontSize: "clamp(2rem, 5.5vw, 5rem)" }}
           >
             FIRE SPREADS IN SECONDS.
           </span>
           <span
-            className="block text-2xl sm:text-3xl lg:text-5xl mt-2 text-ice-gradient"
+            className="block mt-2 text-ice-gradient"
+            style={{ fontSize: "clamp(1.5rem, 3.5vw, 3.5rem)" }}
           >
             DNF SLOWS IT.
           </span>
