@@ -88,29 +88,29 @@ export default function UseCasesPreview() {
     <section
       id="use-cases"
       className="relative py-10 overflow-hidden"
-      style={{ background: "#040a05" }}
+      style={{ background: "#080808" }}
     >
       {/* Ambient glow */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 80% 60% at 50% 40%, rgba(232,92,13,0.04) 0%, transparent 70%)",
+            "radial-gradient(ellipse 80% 60% at 50% 40%, rgba(192,21,42,0.04) 0%, transparent 70%)",
         }}
       />
 
       <div className="relative z-10 max-w-[1200px] mx-auto px-6 lg:px-10">
         {/* Centered header */}
         <div className="text-center mb-12">
-          <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-[#f5a020] mb-5">
+          <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-[#e8394d] mb-5">
             Applications
           </span>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#e8f0e0] leading-tight mb-6">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#f5f0f0] leading-tight mb-6">
             One Technology.
             <br />
             <span className="text-ice-gradient">Infinite Applications.</span>
           </h2>
-          <p className="text-[#6a8060] max-w-2xl mx-auto text-lg leading-relaxed">
+          <p className="text-[#8a7070] max-w-2xl mx-auto text-lg leading-relaxed">
             DNF was designed for scalability. From a single building to a national forest network — the same
             core technology adapts to every environment and scale.
           </p>
@@ -125,17 +125,17 @@ export default function UseCasesPreview() {
                 key={i}
                 className="rounded-2xl p-5 group cursor-pointer transition-all duration-300"
                 style={{
-                  background: "rgba(4,12,4,0.8)",
-                  border: "1px solid rgba(232,92,13,0.13)",
-                  borderTop: "2px solid #e85c0d",
+                  background: "rgba(12,4,4,0.8)",
+                  border: "1px solid rgba(192,21,42,0.13)",
+                  borderTop: "2px solid #c0152a",
                 }}
               >
                 {/* Icon */}
                 <div
-                  className="w-10 h-10 rounded-xl flex items-center justify-center mb-3 text-[#f5a020]"
+                  className="w-10 h-10 rounded-xl flex items-center justify-center mb-3 text-[#e8394d]"
                   style={{
-                    background: "rgba(232,92,13,0.08)",
-                    border: "1px solid rgba(232,92,13,0.15)",
+                    background: "rgba(192,21,42,0.08)",
+                    border: "1px solid rgba(192,21,42,0.15)",
                   }}
                 >
                   <UCIcon className="w-5 h-5" />
@@ -145,16 +145,16 @@ export default function UseCasesPreview() {
                 <div
                   className="inline-block text-[10px] font-bold tracking-widest uppercase px-2 py-0.5 rounded-full mb-2"
                   style={{
-                    color: "#f5a020",
-                    background: "rgba(232,92,13,0.08)",
-                    border: "1px solid rgba(232,92,13,0.18)",
+                    color: "#e8394d",
+                    background: "rgba(192,21,42,0.08)",
+                    border: "1px solid rgba(192,21,42,0.18)",
                   }}
                 >
                   {uc.tag}
                 </div>
 
-                <h3 className="text-sm font-bold text-[#e8f0e0] mb-2 leading-tight">{uc.title}</h3>
-                <p className="text-xs text-[#3a5040] leading-relaxed">{uc.desc}</p>
+                <h3 className="text-sm font-bold text-[#f5f0f0] mb-2 leading-tight">{uc.title}</h3>
+                <p className="text-xs text-[#5a4040] leading-relaxed">{uc.desc}</p>
               </div>
             );
           })}

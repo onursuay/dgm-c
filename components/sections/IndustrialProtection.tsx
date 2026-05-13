@@ -43,9 +43,9 @@ const riskBars: RiskBar[] = [
   {
     label: "Fire Spread Risk (DNF-Protected)",
     status: "Managed",
-    statusColor: "#f5a020",
+    statusColor: "#e8394d",
     width: "24%",
-    barColor: "from-[#e85c0d] to-[#f5a020]",
+    barColor: "from-[#c0152a] to-[#e8394d]",
   },
   {
     label: "Business Continuity Score",
@@ -80,14 +80,14 @@ export default function IndustrialProtection() {
   return (
     <section
       className="relative py-10 overflow-hidden"
-      style={{ background: "#040a05" }}
+      style={{ background: "#080808" }}
     >
       {/* Ambient glow */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 60% 60% at 70% 50%, rgba(232,92,13,0.05) 0%, transparent 60%)",
+            "radial-gradient(ellipse 60% 60% at 70% 50%, rgba(192,21,42,0.05) 0%, transparent 60%)",
         }}
       />
 
@@ -95,20 +95,20 @@ export default function IndustrialProtection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
           {/* ── LEFT COLUMN ── eyebrow + heading + description + sectors + CTA */}
           <div>
-            <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-[#f5a020] mb-5">
+            <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-[#e8394d] mb-5">
               Industrial Protection
             </span>
-            <h2 className="text-4xl sm:text-5xl font-black text-[#e8f0e0] leading-tight mb-5">
+            <h2 className="text-4xl sm:text-5xl font-black text-[#f5f0f0] leading-tight mb-5">
               When the Stakes
               <br />
               <span className="text-ice-gradient">Are Measured in Millions.</span>
             </h2>
-            <p className="text-[#6a8060] text-base leading-relaxed mb-5">
+            <p className="text-[#8a7070] text-base leading-relaxed mb-5">
               Industrial fires are not just asset events — they are operational catastrophes. DNF provides
               manufacturers, energy companies and logistics operators with a measurable first line of
               defense against fire propagation, protecting production continuity and worker safety.
             </p>
-            <p className="text-[#6a8060] text-sm leading-relaxed mb-7">
+            <p className="text-[#8a7070] text-sm leading-relaxed mb-7">
               Deployed across six key industrial sectors, DNF integrates into existing safety infrastructure
               — no complete overhaul required. Compliance documentation and site assessment included.
             </p>
@@ -122,14 +122,14 @@ export default function IndustrialProtection() {
                     key={s.label}
                     className="flex flex-col items-center text-center rounded-xl p-3 transition-colors"
                     style={{
-                      background: "rgba(4,12,4,0.8)",
-                      border: "1px solid rgba(232,92,13,0.13)",
+                      background: "rgba(12,4,4,0.8)",
+                      border: "1px solid rgba(192,21,42,0.13)",
                     }}
                   >
-                    <div className="w-8 h-8 mb-2 text-[#f5a020]">
+                    <div className="w-8 h-8 mb-2 text-[#e8394d]">
                       <SIcon className="w-8 h-8" />
                     </div>
-                    <div className="text-[10px] text-[#3a5040] leading-tight font-medium">
+                    <div className="text-[10px] text-[#5a4040] leading-tight font-medium">
                       {s.label}
                     </div>
                   </div>
@@ -148,26 +148,26 @@ export default function IndustrialProtection() {
             <div
               className="rounded-2xl p-6 flex items-center gap-4"
               style={{
-                background: "rgba(4,12,4,0.9)",
-                border: "1px solid rgba(232,92,13,0.2)",
-                borderTop: "2px solid #e85c0d",
+                background: "rgba(12,4,4,0.9)",
+                border: "1px solid rgba(192,21,42,0.2)",
+                borderTop: "2px solid #c0152a",
               }}
             >
               <div
-                className="w-14 h-14 rounded-xl flex items-center justify-center text-[#f5a020] shrink-0"
+                className="w-14 h-14 rounded-xl flex items-center justify-center text-[#e8394d] shrink-0"
                 style={{
-                  background: "rgba(232,92,13,0.1)",
-                  border: "1px solid rgba(232,92,13,0.2)",
+                  background: "rgba(192,21,42,0.1)",
+                  border: "1px solid rgba(192,21,42,0.2)",
                 }}
               >
                 <IconFactory className="w-8 h-8" />
               </div>
               <div>
-                <div className="text-lg font-black text-[#e8f0e0]">Industrial Shield</div>
-                <div className="text-xs text-[#f5a020] font-medium mt-0.5">
+                <div className="text-lg font-black text-[#f5f0f0]">Industrial Shield</div>
+                <div className="text-xs text-[#e8394d] font-medium mt-0.5">
                   DNF Industrial Fire Containment Protocol
                 </div>
-                <div className="text-xs text-[#6a8060] mt-1">
+                <div className="text-xs text-[#8a7070] mt-1">
                   Designed for high-value, high-risk operational environments.
                 </div>
               </div>
@@ -177,26 +177,26 @@ export default function IndustrialProtection() {
             <div
               className="rounded-2xl p-6"
               style={{
-                background: "rgba(4,12,4,0.8)",
-                border: "1px solid rgba(232,92,13,0.13)",
-                borderTop: "2px solid rgba(232,92,13,0.4)",
+                background: "rgba(12,4,4,0.8)",
+                border: "1px solid rgba(192,21,42,0.13)",
+                borderTop: "2px solid rgba(192,21,42,0.4)",
               }}
             >
-              <div className="text-xs font-bold tracking-[0.2em] uppercase text-[#f5a020] mb-5">
+              <div className="text-xs font-bold tracking-[0.2em] uppercase text-[#e8394d] mb-5">
                 Fire Risk Comparison
               </div>
               <div className="space-y-4">
                 {riskBars.map((rb, i) => (
                   <div key={i}>
                     <div className="flex justify-between text-xs mb-1.5">
-                      <span className="text-[#6a8060]">{rb.label}</span>
+                      <span className="text-[#8a7070]">{rb.label}</span>
                       <span style={{ color: rb.statusColor }} className="font-semibold">
                         {rb.status}
                       </span>
                     </div>
                     <div
                       className="h-2 rounded-full overflow-hidden"
-                      style={{ background: "rgba(232,92,13,0.08)" }}
+                      style={{ background: "rgba(192,21,42,0.08)" }}
                     >
                       <div
                         className={`h-full rounded-full bg-gradient-to-r ${rb.barColor}`}
@@ -214,19 +214,19 @@ export default function IndustrialProtection() {
                 key={i}
                 className="rounded-2xl p-5 flex gap-4"
                 style={{
-                  background: "rgba(4,12,4,0.8)",
-                  border: "1px solid rgba(232,92,13,0.1)",
+                  background: "rgba(12,4,4,0.8)",
+                  border: "1px solid rgba(192,21,42,0.1)",
                 }}
               >
                 <div
                   className="shrink-0 w-1.5 rounded-full self-stretch"
                   style={{
-                    background: "linear-gradient(to bottom, #e85c0d, #f5a020)",
+                    background: "linear-gradient(to bottom, #c0152a, #e8394d)",
                   }}
                 />
                 <div>
-                  <div className="text-sm font-bold text-[#e8f0e0] mb-1">{rc.title}</div>
-                  <div className="text-xs text-[#6a8060] leading-relaxed">{rc.desc}</div>
+                  <div className="text-sm font-bold text-[#f5f0f0] mb-1">{rc.title}</div>
+                  <div className="text-xs text-[#8a7070] leading-relaxed">{rc.desc}</div>
                 </div>
               </div>
             ))}

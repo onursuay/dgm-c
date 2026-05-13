@@ -59,20 +59,20 @@ const milestones: Milestone[] = [
 function statusStyle(status: string): React.CSSProperties {
   if (status === "Active") {
     return {
-      color: "#f5a020",
-      background: "rgba(232,92,13,0.1)",
-      border: "1px solid rgba(245,160,32,0.25)",
+      color: "#e8394d",
+      background: "rgba(192,21,42,0.1)",
+      border: "1px solid rgba(232,57,77,0.25)",
     };
   }
   if (status === "Expanding") {
     return {
-      color: "#ff9040",
+      color: "#ff6070",
       background: "rgba(96,200,255,0.08)",
       border: "1px solid rgba(96,200,255,0.2)",
     };
   }
   return {
-    color: "#6a8060",
+    color: "#8a7070",
     background: "rgba(58,90,122,0.1)",
     border: "1px solid rgba(58,90,122,0.2)",
   };
@@ -82,29 +82,29 @@ export default function GlobalMission() {
   return (
     <section
       className="relative py-10 overflow-hidden"
-      style={{ background: "#040a05" }}
+      style={{ background: "#080808" }}
     >
       {/* Ambient glow */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 60% 60% at 50% 50%, rgba(232,92,13,0.04) 0%, transparent 70%)",
+            "radial-gradient(ellipse 60% 60% at 50% 50%, rgba(192,21,42,0.04) 0%, transparent 70%)",
         }}
       />
 
       <div className="relative z-10 max-w-[1200px] mx-auto px-6 lg:px-10">
         {/* Centered header */}
         <div className="text-center mb-14">
-          <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-[#f5a020] mb-5">
+          <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-[#e8394d] mb-5">
             Global Mission
           </span>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#e8f0e0] leading-tight mb-6">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#f5f0f0] leading-tight mb-6">
             A Safer World
             <br />
             <span className="text-ice-gradient">Is a Prepared One.</span>
           </h2>
-          <p className="text-[#6a8060] text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[#8a7070] text-lg max-w-2xl mx-auto leading-relaxed">
             DNF was born in Germany with a mission that extends far beyond national borders. Fire does not
             respect boundaries — and neither does our commitment to protecting what matters.
           </p>
@@ -114,7 +114,7 @@ export default function GlobalMission() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12">
           {/* LEFT: 5 region status cards */}
           <div>
-            <div className="text-xs font-bold tracking-[0.25em] uppercase text-[#f5a020] mb-5">
+            <div className="text-xs font-bold tracking-[0.25em] uppercase text-[#e8394d] mb-5">
               Deployment Regions
             </div>
             <div className="space-y-3">
@@ -123,9 +123,9 @@ export default function GlobalMission() {
                   key={r.label}
                   className="rounded-xl p-5 flex items-start gap-4"
                   style={{
-                    background: "rgba(4,12,4,0.8)",
-                    border: "1px solid rgba(232,92,13,0.13)",
-                    borderLeft: "2px solid #e85c0d",
+                    background: "rgba(12,4,4,0.8)",
+                    border: "1px solid rgba(192,21,42,0.13)",
+                    borderLeft: "2px solid #c0152a",
                   }}
                 >
                   {/* Status badge */}
@@ -139,10 +139,10 @@ export default function GlobalMission() {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-baseline gap-2 mb-1">
-                      <span className="text-sm font-bold text-[#e8f0e0]">{r.label}</span>
-                      <span className="text-xs text-[#3a5040]">— {r.count}</span>
+                      <span className="text-sm font-bold text-[#f5f0f0]">{r.label}</span>
+                      <span className="text-xs text-[#5a4040]">— {r.count}</span>
                     </div>
-                    <p className="text-xs text-[#6a8060] leading-relaxed">{r.desc}</p>
+                    <p className="text-xs text-[#8a7070] leading-relaxed">{r.desc}</p>
                   </div>
                 </div>
               ))}
@@ -151,7 +151,7 @@ export default function GlobalMission() {
 
           {/* RIGHT: 7-item milestone timeline */}
           <div>
-            <div className="text-xs font-bold tracking-[0.25em] uppercase text-[#f5a020] mb-5">
+            <div className="text-xs font-bold tracking-[0.25em] uppercase text-[#e8394d] mb-5">
               Our Journey
             </div>
             <div className="relative">
@@ -160,7 +160,7 @@ export default function GlobalMission() {
                 className="absolute left-[72px] top-2 bottom-2 w-px"
                 style={{
                   background:
-                    "linear-gradient(to bottom, rgba(232,92,13,0.6), rgba(232,92,13,0.1))",
+                    "linear-gradient(to bottom, rgba(192,21,42,0.6), rgba(192,21,42,0.1))",
                 }}
               />
               <div className="space-y-5">
@@ -175,14 +175,14 @@ export default function GlobalMission() {
                       <div
                         className="w-3 h-3 rounded-full relative z-10"
                         style={{
-                          background: "#e85c0d",
-                          boxShadow: "0 0 8px rgba(232,92,13,0.6)",
+                          background: "#c0152a",
+                          boxShadow: "0 0 8px rgba(192,21,42,0.6)",
                         }}
                       />
                     </div>
                     {/* Label */}
                     <div className="flex-1">
-                      <p className="text-sm text-[#6a8060] leading-relaxed">{m.label}</p>
+                      <p className="text-sm text-[#8a7070] leading-relaxed">{m.label}</p>
                     </div>
                   </div>
                 ))}
@@ -195,16 +195,16 @@ export default function GlobalMission() {
         <div
           className="rounded-2xl p-8 text-center"
           style={{
-            background: "rgba(4,12,4,0.6)",
-            border: "1px solid rgba(232,92,13,0.12)",
+            background: "rgba(12,4,4,0.6)",
+            border: "1px solid rgba(192,21,42,0.12)",
           }}
         >
-          <p className="text-lg font-bold text-[#e8f0e0] max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg font-bold text-[#f5f0f0] max-w-3xl mx-auto leading-relaxed">
             We envision a world where cities, forests and industrial zones are systematically prepared —
             where fire response does not start at ignition but{" "}
             <span className="text-ice-gradient">long before it.</span>
           </p>
-          <p className="text-[#6a8060] text-sm mt-3 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[#8a7070] text-sm mt-3 max-w-2xl mx-auto leading-relaxed">
             DNF is the technology that makes that vision operational. Each new partnership, each city
             enrolled, each protected hectare of forest is one step closer to a world that does not lose
             what is irreplaceable.

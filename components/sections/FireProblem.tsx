@@ -121,26 +121,26 @@ export default function FireProblem() {
     <section
       id="technology"
       className="relative py-10 overflow-hidden"
-      style={{ background: "#040a05" }}
+      style={{ background: "#080808" }}
     >
       {/* Subtle radial glow */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] rounded-full pointer-events-none"
-        style={{ background: "radial-gradient(ellipse, rgba(232,92,13,0.06) 0%, transparent 70%)" }}
+        style={{ background: "radial-gradient(ellipse, rgba(192,21,42,0.06) 0%, transparent 70%)" }}
       />
 
       <div className="relative z-10 max-w-[1200px] mx-auto px-6 lg:px-10">
         {/* Centered header */}
         <div className="text-center mb-14">
-          <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-[#f5a020] mb-5">
+          <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-[#e8394d] mb-5">
             The Scale of the Problem
           </span>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#e8f0e0] leading-tight mb-6">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#f5f0f0] leading-tight mb-6">
             Fire Does Not Wait.
             <br />
             <span className="text-ice-gradient">Neither Should We.</span>
           </h2>
-          <p className="text-[#6a8060] text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[#8a7070] text-lg max-w-2xl mx-auto leading-relaxed">
             Every year, fire consumes lives, environments, economies, and heritage. The challenge is not just
             extinguishing fire — it is slowing its advance long enough for humans to respond.
           </p>
@@ -155,16 +155,16 @@ export default function FireProblem() {
                 key={i}
                 className="rounded-2xl p-7 relative overflow-hidden group"
                 style={{
-                  background: "rgba(4,12,4,0.8)",
-                  border: "1px solid rgba(232,92,13,0.15)",
-                  borderTop: "2px solid #e85c0d",
+                  background: "rgba(12,4,4,0.8)",
+                  border: "1px solid rgba(192,21,42,0.15)",
+                  borderTop: "2px solid #c0152a",
                 }}
               >
                 {/* Corner glow on hover */}
                 <div
                   className="absolute top-0 right-0 w-28 h-28 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                   style={{
-                    background: "radial-gradient(circle, rgba(245,160,32,0.12) 0%, transparent 70%)",
+                    background: "radial-gradient(circle, rgba(232,57,77,0.12) 0%, transparent 70%)",
                     transform: "translate(30%, -30%)",
                   }}
                 />
@@ -172,10 +172,10 @@ export default function FireProblem() {
                 <div className="relative z-10">
                   {/* Icon */}
                   <div
-                    className="w-12 h-12 rounded-xl flex items-center justify-center mb-5 text-[#f5a020]"
+                    className="w-12 h-12 rounded-xl flex items-center justify-center mb-5 text-[#e8394d]"
                     style={{
-                      background: "rgba(232,92,13,0.1)",
-                      border: "1px solid rgba(232,92,13,0.2)",
+                      background: "rgba(192,21,42,0.1)",
+                      border: "1px solid rgba(192,21,42,0.2)",
                     }}
                   >
                     <ThreatIcon />
@@ -183,13 +183,13 @@ export default function FireProblem() {
 
                   {/* Stat */}
                   <div className="text-3xl font-black text-ice-gradient mb-1">{threat.stat}</div>
-                  <div className="text-xs text-[#6a8060] mb-4 tracking-wide uppercase font-medium">
+                  <div className="text-xs text-[#8a7070] mb-4 tracking-wide uppercase font-medium">
                     {threat.statLabel}
                   </div>
 
                   {/* Title & description */}
-                  <h3 className="text-base font-bold text-[#e8f0e0] mb-3">{threat.title}</h3>
-                  <p className="text-sm text-[#6a8060] leading-relaxed">{threat.desc}</p>
+                  <h3 className="text-base font-bold text-[#f5f0f0] mb-3">{threat.title}</h3>
+                  <p className="text-sm text-[#8a7070] leading-relaxed">{threat.desc}</p>
                 </div>
               </div>
             );
@@ -200,15 +200,15 @@ export default function FireProblem() {
         <div
           className="mt-12 p-8 rounded-2xl text-center"
           style={{
-            background: "rgba(4,12,4,0.6)",
-            border: "1px solid rgba(232,92,13,0.12)",
+            background: "rgba(12,4,4,0.6)",
+            border: "1px solid rgba(192,21,42,0.12)",
           }}
         >
-          <p className="text-xl md:text-2xl font-bold text-[#e8f0e0]">
+          <p className="text-xl md:text-2xl font-bold text-[#f5f0f0]">
             The window between ignition and catastrophe is{" "}
             <span className="text-ice-gradient">measured in minutes.</span>
           </p>
-          <p className="text-[#6a8060] mt-3 max-w-xl mx-auto text-sm leading-relaxed">
+          <p className="text-[#8a7070] mt-3 max-w-xl mx-auto text-sm leading-relaxed">
             DNF was engineered to widen that window. Not to replace firefighters, but to give them the time
             they need to save what matters.
           </p>

@@ -55,14 +55,14 @@ export default function MunicipalSafety() {
   return (
     <section
       className="relative py-10 overflow-hidden"
-      style={{ background: "#040a05" }}
+      style={{ background: "#080808" }}
     >
       {/* Ambient glow */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 60% 60% at 30% 50%, rgba(232,92,13,0.05) 0%, transparent 60%)",
+            "radial-gradient(ellipse 60% 60% at 30% 50%, rgba(192,21,42,0.05) 0%, transparent 60%)",
         }}
       />
 
@@ -70,15 +70,15 @@ export default function MunicipalSafety() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
           {/* ── LEFT COLUMN ── header + target grid + text + CTA */}
           <div>
-            <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-[#f5a020] mb-5">
+            <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-[#e8394d] mb-5">
               Municipal Safety
             </span>
-            <h2 className="text-4xl sm:text-5xl font-black text-[#e8f0e0] leading-tight mb-5">
+            <h2 className="text-4xl sm:text-5xl font-black text-[#f5f0f0] leading-tight mb-5">
               Protecting the
               <br />
               <span className="text-ice-gradient">Heart of Cities.</span>
             </h2>
-            <p className="text-[#6a8060] text-base leading-relaxed mb-5">
+            <p className="text-[#8a7070] text-base leading-relaxed mb-5">
               City administrations face a unique challenge: dense infrastructure, high-occupancy buildings,
               and irreplaceable public assets — all concentrated in zones where a single fire event can
               cascade into a district-wide catastrophe.
@@ -93,14 +93,14 @@ export default function MunicipalSafety() {
                     key={t.label}
                     className="text-center rounded-xl p-3 transition-colors"
                     style={{
-                      background: "rgba(4,12,4,0.8)",
-                      border: "1px solid rgba(232,92,13,0.13)",
+                      background: "rgba(12,4,4,0.8)",
+                      border: "1px solid rgba(192,21,42,0.13)",
                     }}
                   >
-                    <div className="w-8 h-8 mx-auto mb-2 text-[#f5a020]">
+                    <div className="w-8 h-8 mx-auto mb-2 text-[#e8394d]">
                       <TIcon className="w-8 h-8" />
                     </div>
-                    <div className="text-[10px] text-[#3a5040] leading-tight font-medium">
+                    <div className="text-[10px] text-[#5a4040] leading-tight font-medium">
                       {t.label}
                     </div>
                   </div>
@@ -108,7 +108,7 @@ export default function MunicipalSafety() {
               })}
             </div>
 
-            <p className="text-[#6a8060] text-sm leading-relaxed mb-8">
+            <p className="text-[#8a7070] text-sm leading-relaxed mb-8">
               DNF provides municipalities with a proactive tool to pre-treat public buildings, evacuation
               corridors and high-density zones — significantly improving fire containment capability and
               reducing emergency response pressure on local departments. The Urban Shield program is already
@@ -131,21 +131,21 @@ export default function MunicipalSafety() {
             <div
               className="rounded-2xl p-6 flex items-center gap-4"
               style={{
-                background: "rgba(4,12,4,0.9)",
-                border: "1px solid rgba(232,92,13,0.2)",
-                borderTop: "2px solid #e85c0d",
+                background: "rgba(12,4,4,0.9)",
+                border: "1px solid rgba(192,21,42,0.2)",
+                borderTop: "2px solid #c0152a",
               }}
             >
-              <div className="w-14 h-14 rounded-xl flex items-center justify-center text-[#f5a020] shrink-0"
-                style={{ background: "rgba(232,92,13,0.1)", border: "1px solid rgba(232,92,13,0.2)" }}>
+              <div className="w-14 h-14 rounded-xl flex items-center justify-center text-[#e8394d] shrink-0"
+                style={{ background: "rgba(192,21,42,0.1)", border: "1px solid rgba(192,21,42,0.2)" }}>
                 <IconCity className="w-8 h-8" />
               </div>
               <div>
-                <div className="text-lg font-black text-[#e8f0e0]">Urban Shield Program</div>
-                <div className="text-xs text-[#f5a020] font-medium mt-0.5">
+                <div className="text-lg font-black text-[#f5f0f0]">Urban Shield Program</div>
+                <div className="text-xs text-[#e8394d] font-medium mt-0.5">
                   DNF Municipal Protection Initiative
                 </div>
-                <div className="text-xs text-[#6a8060] mt-1 leading-relaxed">
+                <div className="text-xs text-[#8a7070] mt-1 leading-relaxed">
                   A structured deployment framework designed for city-scale fire protection with full
                   technical and regulatory support.
                 </div>
@@ -158,16 +158,16 @@ export default function MunicipalSafety() {
                 key={i}
                 className="rounded-2xl p-6"
                 style={{
-                  background: "rgba(4,12,4,0.8)",
-                  border: "1px solid rgba(232,92,13,0.13)",
-                  borderTop: "2px solid rgba(232,92,13,0.4)",
+                  background: "rgba(12,4,4,0.8)",
+                  border: "1px solid rgba(192,21,42,0.13)",
+                  borderTop: "2px solid rgba(192,21,42,0.4)",
                 }}
               >
                 <div className="text-3xl font-black text-ice-gradient mb-1">{sc.value}</div>
-                <div className="text-xs font-bold tracking-widest uppercase text-[#f5a020] mb-3">
+                <div className="text-xs font-bold tracking-widest uppercase text-[#e8394d] mb-3">
                   {sc.label}
                 </div>
-                <p className="text-xs text-[#6a8060] leading-relaxed">{sc.desc}</p>
+                <p className="text-xs text-[#8a7070] leading-relaxed">{sc.desc}</p>
               </div>
             ))}
 
@@ -175,11 +175,11 @@ export default function MunicipalSafety() {
             <div
               className="rounded-xl p-4"
               style={{
-                background: "rgba(232,92,13,0.04)",
-                border: "1px solid rgba(232,92,13,0.1)",
+                background: "rgba(192,21,42,0.04)",
+                border: "1px solid rgba(192,21,42,0.1)",
               }}
             >
-              <p className="text-xs text-[#3a5040] leading-relaxed">
+              <p className="text-xs text-[#5a4040] leading-relaxed">
                 All municipal deployments are supported by full technical documentation, regulatory
                 compliance reports, and on-site training for city fire safety officers.
               </p>

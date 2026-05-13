@@ -22,7 +22,7 @@ export default function FloatingWhatsApp() {
 
         {/* Tooltip */}
         <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
-          <div className="bg-[#050c18] border border-green-900/30 rounded-lg px-3 py-2 text-xs text-[#e8f0e0] shadow-xl">
+          <div className="bg-[#050c18] border border-red-900/30 rounded-lg px-3 py-2 text-xs text-[#f5f0f0] shadow-xl">
             Chat with us on WhatsApp
           </div>
         </div>

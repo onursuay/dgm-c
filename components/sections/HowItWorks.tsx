@@ -98,14 +98,14 @@ export default function HowItWorks() {
   return (
     <section
       className="relative py-10 overflow-hidden"
-      style={{ background: "#040a05" }}
+      style={{ background: "#080808" }}
     >
       {/* Subtle grid texture */}
       <div
         className="absolute inset-0 opacity-[0.025] pointer-events-none"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(232,92,13,1) 1px, transparent 1px), linear-gradient(90deg, rgba(232,92,13,1) 1px, transparent 1px)",
+            "linear-gradient(rgba(192,21,42,1) 1px, transparent 1px), linear-gradient(90deg, rgba(192,21,42,1) 1px, transparent 1px)",
           backgroundSize: "80px 80px",
         }}
       />
@@ -113,15 +113,15 @@ export default function HowItWorks() {
       <div className="relative z-10 max-w-[1200px] mx-auto px-6 lg:px-10">
         {/* Centered header */}
         <div className="text-center mb-14">
-          <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-[#f5a020] mb-5">
+          <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-[#e8394d] mb-5">
             How DNF Works
           </span>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#e8f0e0] leading-tight mb-6">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#f5f0f0] leading-tight mb-6">
             Six Steps.
             <br />
             <span className="text-ice-gradient">One Life-Saving Mission.</span>
           </h2>
-          <p className="text-[#6a8060] max-w-xl mx-auto text-lg leading-relaxed">
+          <p className="text-[#8a7070] max-w-xl mx-auto text-lg leading-relaxed">
             From application to protection — here is how DNF transforms the fire safety equation.
           </p>
         </div>
@@ -133,15 +133,15 @@ export default function HowItWorks() {
               key={i}
               className="rounded-2xl p-7 relative overflow-hidden group"
               style={{
-                background: "rgba(4,12,4,0.8)",
-                border: "1px solid rgba(232,92,13,0.15)",
-                borderTop: "2px solid #e85c0d",
+                background: "rgba(12,4,4,0.8)",
+                border: "1px solid rgba(192,21,42,0.15)",
+                borderTop: "2px solid #c0152a",
               }}
             >
               {/* Faded phase number watermark in top-right */}
               <div
                 className="absolute top-3 right-5 text-6xl font-black leading-none select-none pointer-events-none"
-                style={{ color: "rgba(232,92,13,0.08)" }}
+                style={{ color: "rgba(192,21,42,0.08)" }}
               >
                 {step.phase}
               </div>
@@ -149,32 +149,32 @@ export default function HowItWorks() {
               <div className="relative z-10">
                 {/* Icon */}
                 <div
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 text-[#f5a020]"
+                  className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 text-[#e8394d]"
                   style={{
-                    background: "rgba(232,92,13,0.08)",
-                    border: "1px solid rgba(232,92,13,0.18)",
+                    background: "rgba(192,21,42,0.08)",
+                    border: "1px solid rgba(192,21,42,0.18)",
                   }}
                 >
                   {step.icon}
                 </div>
 
                 {/* Sub-label */}
-                <div className="text-xs font-bold tracking-[0.2em] uppercase text-[#f5a020] mb-2 opacity-80">
+                <div className="text-xs font-bold tracking-[0.2em] uppercase text-[#e8394d] mb-2 opacity-80">
                   {step.sub}
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-[#e8f0e0] mb-3">{step.title}</h3>
+                <h3 className="text-xl font-bold text-[#f5f0f0] mb-3">{step.title}</h3>
 
                 {/* Description */}
-                <p className="text-sm text-[#6a8060] leading-relaxed mb-4">{step.desc}</p>
+                <p className="text-sm text-[#8a7070] leading-relaxed mb-4">{step.desc}</p>
 
                 {/* Detail footer */}
                 <div
                   className="pt-4 border-t"
-                  style={{ borderColor: "rgba(232,92,13,0.1)" }}
+                  style={{ borderColor: "rgba(192,21,42,0.1)" }}
                 >
-                  <p className="text-xs text-[#3a5040] italic">{step.detail}</p>
+                  <p className="text-xs text-[#5a4040] italic">{step.detail}</p>
                 </div>
               </div>
             </div>
